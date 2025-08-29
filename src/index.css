@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+/* Any of your custom CSS rules, including @theme and @font-face, go after these lines. */
+@theme {
+  --color-primary: #40bfff;
+  --color-secondary: #bcddfe;
+  --color-tertiary: #ff4858;
+  --color-gray: #373737;
+  --color-neutralDark: rgba(34, 50, 99, 1);
+  --color-neutralGray: rgba(144, 152, 177, 1);
+  --color-footerColor: #bcddfe;
+  --color-hotDeals: #f6f7f8;
+  --color-headerNav: #f6f7f8;
+  --color-tryColor: #262626;
+  --color-graylight: #dfdede;
+  /* // */
+  --breakpoint-xs: 461px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
