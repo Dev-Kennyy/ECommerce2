@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import Products from "../Components/MegaSale/Products";
 import Section1 from "../Components/Section1";
-import { FaLessThan } from "react-icons/fa";
 import SSProducts from "../Components/FlashSale/SSProducts";
 
 function FlashSale() {

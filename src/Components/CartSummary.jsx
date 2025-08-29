@@ -1,13 +1,12 @@
 // ✅ CartSummary.jsx
-import { useSelector, useDispatch } from "react-redux";
-import { clearCart } from "../Redux/cartSlice";
+import { useSelector } from "react-redux";
 import { useModalContext } from "../Contexts/ModalContext";
 import Modal from "./Modal";
 
 function CartSummary() {
   const { isOpen, setIsOpen } = useModalContext();
   const cart = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   if (cart.length === 0) return null;
 

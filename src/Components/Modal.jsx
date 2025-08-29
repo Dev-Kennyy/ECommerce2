@@ -6,7 +6,7 @@ import ModalForm2 from "./ModalForm2";
 import ModalForm3 from "./ModalForm3";
 
 function Modal() {
-  const { isOpen, setIsOpen } = useModalContext();
+  const { isOpen } = useModalContext();
   const [step, setStep] = useState(1); // 👈 track current step
 
   if (!isOpen) return null;

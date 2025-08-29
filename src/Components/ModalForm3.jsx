@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useModalContext } from "../Contexts/ModalContext";
 
 function ModalForm3() {
-  const { isOpen, setIsOpen } = useModalContext();
+  const { setIsOpen } = useModalContext();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   return (

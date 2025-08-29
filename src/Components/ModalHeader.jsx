@@ -3,7 +3,7 @@ import { MdCancel } from "react-icons/md";
 import { useModalContext } from "../Contexts/ModalContext";
 
 function ModalHeader() {
-  const { isOpen, setIsOpen } = useModalContext();
+  const { setIsOpen } = useModalContext();
   return (
     <>
       <div className="flex justify-between text-primary">
