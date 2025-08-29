@@ -1,15 +1,14 @@
-import { Suspense } from "react";
-import AppLayout from "./Pages/AppLayout";
-import HomePage from "./Pages/Home/HomePage";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Loading from "./Components/Loading";
-import ProductList from "./Pages/ProductList/ProductList";
-import ProductInfo from "./Pages/ClickedProducts/ProductInfo";
-import FlashSale from "./Pages/FlashSale";
-import Favourite from "./Pages/Favourite";
-import Cart from "./Pages/Cart";
-import ContactPage from "./Pages/ContactPage";
+import { Suspense } from "react";
+import AppLayout from "./Pages/AppLayout.jsx";
+import HomePage from "./Pages/Home/HomePage.jsx";
+import Loading from "./Components/Loading.jsx";
+import ProductList from "./Pages/ProductList/ProductList.jsx";
+import ProductInfo from "./Pages/ClickedProducts/ProductInfo.jsx";
+import FlashSale from "./Pages/FlashSale.jsx";
+import Favourite from "./Pages/Favourite.jsx";
+import Cart from "./Pages/Cart.jsx";
+import ContactPage from "./Pages/ContactPage.jsx";
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
               <Route path="Cart" element={<Cart />} />
               <Route path="Contact" element={<ContactPage />} />
               <Route path="Product-Info/:id" element={<ProductInfo />} />
-              {/* <Route path="id" /> */}
             </Route>
           </Routes>
         </Suspense>
