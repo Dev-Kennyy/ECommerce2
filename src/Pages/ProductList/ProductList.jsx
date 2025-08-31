@@ -2,7 +2,7 @@ import ProductGrid from "../../Components/ProductGrid";
 
 function ProductList() {
   return (
-    <div className="hidden sm:block">
+    <div className="block">
       <ProductGrid />
     </div>
   );

@@ -9,26 +9,61 @@ import FlashSale from "./Pages/FlashSale.jsx";
 import Favourite from "./Pages/Favourite.jsx";
 import Cart from "./Pages/Cart.jsx";
 import ContactPage from "./Pages/ContactPage.jsx";
+import LoginPage from "./Pages/LoginPage.jsx";
+import SignPage from "./Pages/SignPage.jsx";
+import ProtectedRoute from "./Components/ProtectedRoute.jsx"; // ⬅️ import this
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Suspense fallback={<Loading />}>
-          <Routes>
-            <Route path="/" element={<AppLayout />}>
-              <Route index="Home" element={<HomePage />} />
-              <Route path="All-Products" element={<ProductList />} />
-              <Route path="Flash-Sale" element={<FlashSale />} />
-              <Route path="Favourite" element={<Favourite />} />
-              <Route path="Cart" element={<Cart />} />
-              <Route path="Contact" element={<ContactPage />} />
-              <Route path="Product-Info/:id" element={<ProductInfo />} />
-            </Route>
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Suspense fallback={<Loading />}>
+        <Routes>
+          <Route path="/" element={<AppLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="All-Products" element={<ProductList />} />
+
+            {/* ✅ Protected routes */}
+            <Route
+              path="Flash-Sale"
+              element={
+                <ProtectedRoute>
+                  <FlashSale />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="Favourite"
+              element={
+                <ProtectedRoute>
+                  <Favourite />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="Cart"
+              element={
+                <ProtectedRoute>
+                  <Cart />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="Product-Info/:id"
+              element={
+                <ProtectedRoute>
+                  <ProductInfo />
+                </ProtectedRoute>
+              }
+            />
+
+            {/* Public routes */}
+            <Route path="Contact" element={<ContactPage />} />
+            <Route path="Login" element={<LoginPage />} />
+            <Route path="Register" element={<SignPage />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 

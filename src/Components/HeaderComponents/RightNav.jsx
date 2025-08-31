@@ -18,8 +18,8 @@ function RightNav() {
         <li className="px-3 py-2 hover:bg-gray-100 rounded">
           <Link to="All-Products">Product</Link>
         </li>
-        <li className="px-3 py-2 hover:bg-gray-100 rounded">SNEAKERS</li>
-        <li className="px-3 py-2 hover:bg-gray-100 rounded">BELT</li>
+        {/* <li className="px-3 py-2 hover:bg-gray-100 rounded">SNEAKERS</li> */}
+        {/* <li className="px-3 py-2 hover:bg-gray-100 rounded">BELT</li> */}
         <li className="px-3 py-2 hover:bg-gray-100 rounded">
           <Link to="Contact">Contact</Link>
         </li>

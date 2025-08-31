@@ -30,7 +30,7 @@ function ProductContainer() {
   const products = Array.isArray(data) ? data : [data];
 
   return (
-    <div className="flex flex-wrap justify-center gap-5">
+    <div className="flex flex-wrap justify-center gap-2">
       {products.map((info) => (
         <HotProducts
           title={info.title}
