@@ -12,8 +12,9 @@ function UserNav() {
         </li>
         <li className="cursor-pointer tracking-wider">
           <p>
-            <Link to="Cart">
+            <Link to="Cart" className="flex items-center gap-2">
               <CiShoppingCart />
+              Cart
             </Link>
           </p>
         </li>
