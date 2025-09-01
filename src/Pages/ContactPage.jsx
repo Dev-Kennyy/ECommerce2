@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <div>
       <ContactHeader />
-      <div className="flex justify-center pt-9">
+      <div className="flex justify-center pt-9 flex-wrap">
         <ContactLeft />
         <ContactRight />
       </div>
