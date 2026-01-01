@@ -6,8 +6,6 @@ import FlashSale from "../../Components/FlashSale";
 import HomePageSearch from "../../Components/HomePageSearch";
 import LatestNews from "../../Components/LatestNews";
 import MegaSale from "../../Components/MegaSale";
-import Recommended from "../../Components/RecommendedProduct/Recommended";
-// import Recommended from "../../Components/RecommendedProduct/recommended";
 import Section1 from "../../Components/Section1";
 import ProductGrid from "../../Components/SS-Products-Homepage/Divs";
 import AllFeature from "../../Components/ThreeFeatures/AllFeature";
@@ -20,7 +18,7 @@ function HomePage() {
         <Category />
         <FlashSale />
         <MegaSale />
-        <Recommended />
+        {/* <Recommen /> */}
         <ProductGrid />
       </div>
       <div className="LargeScreen hidden sm:block">
